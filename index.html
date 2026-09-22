@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Leśna Polana Górajek - całoroczne domki z balią i sauną, świętokrzyskie</title>
+<meta name="description" content="Dziesięć całorocznych domków w lesie, Chycza 106 koło Radkowa (świętokrzyskie). Balia z hydromasażem przy każdym domku, dwie sauny zewnętrzne, stodoła eventowa, miejsce na ognisko. Rezerwacja online.">
+<meta property="og:title" content="Leśna Polana Górajek - domki całoroczne w lesie">
+<meta property="og:description" content="Las szumi tuż za oknem. Dziesięć domków z balią i kominkiem, sauny, stodoła eventowa. Świętokrzyskie, 29-135 Radków.">
+<meta property="og:image" content="img/hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--las:#243b29;--las2:#16251a;--mech:#4d6b4f;--drewno:#c08a4e;--drewno2:#a8703a;--krem:#f7f4ed;--tekst:#232320;--szary:#6a6a63;--linia:#e2ddd2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Karla,system-ui,sans-serif;color:var(--tekst);background:var(--krem);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.szkic{background:#fff6d5;border-bottom:1px solid #e8d98f;color:#5b4a10;font-size:14px;padding:10px 20px;text-align:center}
+.szkic b{font-weight:700}
+.pasek{background:var(--las2);color:#d4dbd2;font-size:13.5px}
+.pasek .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.pasek a{text-decoration:none}
+header{position:sticky;top:0;z-index:50;background:rgba(247,244,237,.96);border-bottom:1px solid var(--linia);backdrop-filter:blur(6px)}
+header .wrap{display:flex;align-items:center;gap:20px;padding-top:12px;padding-bottom:12px}
+.logo{font-family:Fraunces,serif;font-size:20px;font-weight:600;letter-spacing:.01em;text-decoration:none;line-height:1.1}
+.logo span{display:block;font-family:Karla,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mech);font-weight:700}
+nav{margin-left:auto;display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-bottom-color:var(--drewno)}
+.btn{display:inline-block;background:var(--drewno);color:#fff;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--drewno)}
+.btn:hover{background:var(--drewno2);border-color:var(--drewno2)}
+.btn.ghost{background:transparent;color:var(--tekst);border-color:var(--tekst)}
+.btn.ghost:hover{background:var(--tekst);color:#fff}
+.burger{display:none;background:none;border:0;font-size:26px;cursor:pointer;margin-left:auto}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .cien{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,18,12,.55) 0%,rgba(10,18,12,.15) 35%,rgba(10,18,12,.85) 100%)}
+.hero .wrap{position:relative;padding-top:120px;padding-bottom:64px}
+.hero .nad{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#ddc79f;font-weight:700;margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.6vw,62px);max-width:16ch;text-shadow:0 2px 20px rgba(0,0,0,.45)}
+.hero p{max-width:52ch;margin-top:16px;font-size:18px;color:#eee9df}
+.hero .akcje{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero .btn.ghost{color:#fff;border-color:#fff}
+.hero .btn.ghost:hover{background:#fff;color:var(--tekst)}
+.atuty{background:var(--las);color:#e7ece6}
+.atuty .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.atuty div{padding:30px 24px;border-left:1px solid rgba(255,255,255,.12)}
+.atuty div:first-child{border-left:0}
+.atuty b{display:block;font-family:Fraunces,serif;font-size:30px;color:#e5b878;font-weight:600;line-height:1.1}
+.atuty span{font-size:14.5px;color:#c3cdc1;display:block;margin-top:6px}
+section{padding:78px 0}
+.tyt{font-size:clamp(28px,3.4vw,40px);margin-bottom:12px}
+.lead{color:var(--szary);max-width:66ch;margin-bottom:34px}
+.dwie{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.dwie .foto img{border-radius:14px}
+.lista{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-top:22px}
+.lista li{position:relative;padding-left:26px;font-size:16px}
+.lista li:before{content:"";position:absolute;left:0;top:9px;width:11px;height:11px;border-radius:3px;background:var(--drewno);transform:rotate(45deg)}
+.mozaika{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:12px;margin-top:34px}
+.mozaika a{display:block;overflow:hidden;border-radius:12px}
+.mozaika img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.mozaika a:hover img{transform:scale(1.05)}
+.mozaika .duzy{grid-column:span 2;grid-row:span 2}
+.karty{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.karta{background:#fff;border:1px solid var(--linia);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.karta img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.karta .tr{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.karta h3{font-size:21px;margin-bottom:8px}
+.karta p{font-size:15px;color:var(--szary);flex:1}
+.karta .km{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--drewno2);font-weight:700;margin-bottom:8px}
+.ciemna{background:var(--las2);color:#e7ece6;position:relative;overflow:hidden}
+.ciemna .tyt{color:#fff}
+.ciemna .lead{color:#b9c4b7}
+.ciemna .tlo{position:absolute;inset:0;opacity:.2;object-fit:cover;width:100%;height:100%}
+.ciemna .wrap{position:relative}
+.punkty{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:10px}
+.punkty h3{font-size:19px;color:#e5b878;margin-bottom:6px}
+.punkty p{font-size:15px;color:#b9c4b7}
+.opinie{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.opinia{background:#fff;border:1px solid var(--linia);border-radius:14px;padding:24px}
+.opinia .gw{color:var(--drewno);letter-spacing:3px}
+.opinia p{font-size:15.5px;margin:10px 0 14px;color:#3b3b36}
+.opinia .kto{font-size:13px;color:var(--szary)}
+.przyklad{display:inline-block;background:#fff6d5;border:1px solid #e8d98f;color:#5b4a10;font-size:11.5px;padding:2px 8px;border-radius:999px;margin-bottom:10px;font-weight:700}
+.kontakt{display:grid;grid-template-columns:1fr 1.15fr;gap:46px;align-items:start}
+.kontakt h3{font-size:19px;margin:22px 0 4px}
+.kontakt a{font-weight:700;text-decoration:none;border-bottom:1px solid var(--drewno)}
+.mapa{border:0;width:100%;height:370px;border-radius:14px}
+footer{background:var(--las2);color:#9fae9d;font-size:14px;padding:30px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.mobbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;background:var(--las2);color-scheme:light only;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.mobbar a{padding:14px;text-align:center;font-weight:700;text-decoration:none;font-size:15.5px}
+.mobbar a.z{background:var(--drewno)!important;color:#fff!important}
+.mobbar a.r{background:var(--las2)!important;color:#fff!important;border-left:1px solid rgba(255,255,255,.25)}
+@media (max-width:900px){
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--krem);border-bottom:1px solid var(--linia);flex-direction:column;gap:0;padding:8px 20px 18px}
+ nav.open{display:flex}
+ nav a{padding:11px 0;border-bottom:1px solid var(--linia)}
+ header .btn{display:none}
+ .burger{display:block}
+ .atuty .grid{grid-template-columns:1fr 1fr}
+ .atuty div:nth-child(3){border-left:0}
+ .dwie{grid-template-columns:1fr;gap:28px}
+ .karty{grid-template-columns:1fr 1fr}
+ .punkty,.opinie{grid-template-columns:1fr}
+ .kontakt{grid-template-columns:1fr}
+ .mozaika{grid-template-columns:1fr 1fr;grid-auto-rows:140px}
+ .mobbar{display:grid}
+ body{padding-bottom:54px}
+ section{padding:56px 0}
+ .hero{min-height:78vh}
+}
+@media (max-width:560px){.karty{grid-template-columns:1fr}.lista{grid-template-columns:1fr}.pasek .wrap{justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+
+<div class="szkic"><b>Podgląd roboczy (szkic).</b> To wizualizacja na obecnych treściach i zdjęciach ze strony lesnapolanagorajek.pl. Wszystkie zdjęcia zostały skompresowane - cała strona waży poniżej 2 MB zamiast 6,5 MB.</div>
+
+<div class="pasek"><div class="wrap">
+  <div>Chycza 106, 29-135 Radków &middot; województwo świętokrzyskie</div>
+  <div><a href="tel:+48790656082"><b>+48 790 656 082</b></a> &middot; <a href="mailto:lesna.polana.gorajek@gmail.com">lesna.polana.gorajek@gmail.com</a></div>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="#">Leśna Polana<span>Górajek</span></a>
+  <button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+  <nav>
+    <a href="#domki">Domki</a>
+    <a href="#atrakcje">Atrakcje</a>
+    <a href="#stodola">Stodoła eventowa</a>
+    <a href="#okolica">Okolica</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn" href="#rezerwacja">Sprawdź terminy</a>
+</div></header>
+
+<section class="hero" style="padding:0">
+  <img class="bg" src="img/hero.webp" alt="Domki Leśnej Polany Górajek wieczorem nad stawem">
+  <div class="cien"></div>
+  <div class="wrap">
+    <div class="nad">Domki całoroczne &middot; województwo świętokrzyskie</div>
+    <h1>Las szumi tuż za oknem</h1>
+    <p>Dziesięć drewnianych domków w kameralnej osadzie pod Radkowem. Balia z hydromasażem przed każdym domkiem, dwie sauny w ogrodzie, kominek i cisza, której nie słychać w mieście.</p>
+    <div class="akcje">
+      <a class="btn" href="#rezerwacja">Sprawdź wolne terminy</a>
+      <a class="btn ghost" href="tel:+48790656082">&#9742; 790 656 082</a>
+    </div>
+  </div>
+</section>
+
+<div class="atuty"><div class="wrap" style="padding:0"><div class="grid">
+  <div><b>10</b><span>całorocznych domków z ogrzewaniem i kominkiem</span></div>
+  <div><b>Balia</b><span>z hydromasażem przed każdym domkiem</span></div>
+  <div><b>2 sauny</b><span>zewnętrzne pomiędzy domkami</span></div>
+  <div><b>Stodoła</b><span>rustykalna sala na eventy i uroczystości</span></div>
+</div></div></div>
+
+<section id="domki"><div class="wrap">
+  <div class="dwie">
+    <div>
+      <h2 class="tyt">Domek, w którym chce się zostać dłużej</h2>
+      <p class="lead">Nowoczesne, piętrowe domki z antresolą. Salon z w pełni wyposażonym aneksem kuchennym, dwie sypialnie i dwie łazienki - tyle miejsca, żeby przyjechać z dziećmi albo w dwie pary i nikomu nie wchodzić w drogę.</p>
+      <ul class="lista">
+        <li>Piętro z antresolą</li>
+        <li>Salon z aneksem kuchennym</li>
+        <li>2 sypialnie i 2 łazienki</li>
+        <li>Kominek i ogrzewanie</li>
+        <li>Klimatyzacja (chłodzenie i grzanie)</li>
+        <li>Wi-Fi i Smart TV</li>
+        <li>Balia z hydromasażem przed domkiem</li>
+        <li>Taras z widokiem na las</li>
+      </ul>
+      <div style="margin-top:28px"><a class="btn" href="#rezerwacja">Zobacz dostępne terminy</a></div>
+    </div>
+    <div class="foto"><img src="img/wnetrze_staw.webp" alt="Wnętrze domku z widokiem na staw" width="1920" height="1280"></div>
+  </div>
+  <div class="mozaika">
+    <a href="#galeria" class="duzy"><img src="img/antresola.webp" alt="Antresola w domku" loading="lazy"></a>
+    <a href="#galeria"><img src="img/jadalnia.webp" alt="Salon z jadalnią" loading="lazy"></a>
+    <a href="#galeria"><img src="img/kuchnia.webp" alt="Aneks kuchenny" loading="lazy"></a>
+    <a href="#galeria"><img src="img/taras.webp" alt="Taras z balią" loading="lazy"></a>
+    <a href="#galeria"><img src="img/sniadanie.webp" alt="Śniadanie w domku" loading="lazy"></a>
+  </div>
+</div></section>
+
+<section id="atrakcje" style="background:#fff;border-top:1px solid var(--linia);border-bottom:1px solid var(--linia)"><div class="wrap">
+  <h2 class="tyt">Na miejscu</h2>
+  <p class="lead">Wszystko w granicach osady - bez wsiadania do samochodu.</p>
+  <div class="karty">
+    <div class="karta">
+      <img src="img/balia.webp" alt="Balia z hydromasażem" loading="lazy">
+      <div class="tr"><div class="km">Przy każdym domku</div><h3>Balia z hydromasażem</h3><p>Gorąca woda pod gołym niebem o każdej porze roku - najlepiej po zmroku, kiedy nad lasem widać gwiazdy.</p></div>
+    </div>
+    <div class="karta">
+      <img src="img/sauna.webp" alt="Sauna zewnętrzna" loading="lazy">
+      <div class="tr"><div class="km">Dwie sauny</div><h3>Sauny w ogrodzie</h3><p>Dwie zewnętrzne sauny pomiędzy domkami, a obok leżaki i strefa relaksu w cieniu drzew.</p></div>
+    </div>
+    <div class="karta">
+      <img src="img/domki_noc.webp" alt="Osada wieczorem" loading="lazy">
+      <div class="tr"><div class="km">Wieczorem</div><h3>Ognisko i plac zabaw</h3><p>Wydzielone miejsce na ognisko i duży drewniany plac zabaw dla najmłodszych gości.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="stodola" class="ciemna">
+  <img class="tlo" src="img/panorama.webp" alt="" loading="lazy">
+  <div class="wrap">
+    <h2 class="tyt">Stodoła eventowa</h2>
+    <p class="lead">Duża, rustykalna stodoła na terenie osady - miejsce na integrację firmową, warsztaty, biesiadę albo kameralną uroczystość. Obok miejsce na ognisko, a goście nocują kilkadziesiąt metrów dalej, we własnych domkach.</p>
+    <div class="punkty">
+      <div><h3>Wyjazdy integracyjne</h3><p>Sala plus dziesięć domków w jednym miejscu, bez rozwożenia ludzi po noclegach.</p></div>
+      <div><h3>Warsztaty i szkolenia</h3><p>Przestrzeń z charakterem, las za oknem i cisza, w której da się pracować.</p></div>
+      <div><h3>Uroczystości rodzinne</h3><p>Biesiada w stodole, ognisko obok, a rano śniadanie we własnym domku.</p></div>
+    </div>
+    <div style="margin-top:30px"><a class="btn" href="#kontakt">Zapytaj o termin na event</a></div>
+  </div>
+</section>
+
+<section id="okolica"><div class="wrap">
+  <h2 class="tyt">Co zobaczyć w okolicy</h2>
+  <p class="lead">Świętokrzyskie w promieniu godziny jazdy - zamki, jaskinia, skansen i wąskotorówka.</p>
+  <div class="karty">
+    <div class="karta"><img src="img/checiny.webp" alt="Zamek Królewski w Chęcinach" loading="lazy"><div class="tr"><div class="km">Chęciny</div><h3>Zamek Królewski</h3><p>Średniowieczna warownia z przełomu XIII i XIV wieku, z wieżami widokowymi nad miasteczkiem.</p></div></div>
+    <div class="karta"><img src="img/jaskinia.webp" alt="Jaskinia Raj" loading="lazy"><div class="tr"><div class="km">Chęciny</div><h3>Jaskinia Raj</h3><p>Jedna z najpiękniejszych jaskiń krasowych w Polsce, zwiedzanie z przewodnikiem.</p></div></div>
+    <div class="karta"><img src="img/sobkow.webp" alt="Zamek Rycerski w Sobkowie" loading="lazy"><div class="tr"><div class="km">Sobków</div><h3>Zamek Rycerski</h3><p>Późnogotycka fortalicja z XVI wieku nad Nidą, z jazdą konną i pokazami rycerskimi.</p></div></div>
+    <div class="karta"><img src="img/jedrzejow.webp" alt="Muzeum im. Przypkowskich" loading="lazy"><div class="tr"><div class="km">Jędrzejów</div><h3>Muzeum Przypkowskich</h3><p>Trzecia co do wielkości na świecie kolekcja zegarów słonecznych i przyrządów astronomicznych.</p></div></div>
+    <div class="karta"><img src="img/ciuchcia.webp" alt="Ciuchcia Ponidzie" loading="lazy"><div class="tr"><div class="km">Jędrzejów - Pińczów</div><h3>Ciuchcia Ponidzie</h3><p>Kolejka wąskotorowa przez rozlewiska Nidy i lessowe wzgórza Ponidzia.</p></div></div>
+    <div class="karta"><img src="img/tokarnia.webp" alt="Park Etnograficzny w Tokarni" loading="lazy"><div class="tr"><div class="km">Tokarnia</div><h3>Park Etnograficzny</h3><p>Skansen z wiatrakami i drewnianą zabudową dawnej wsi świętokrzyskiej.</p></div></div>
+  </div>
+</div></section>
+
+<section id="galeria" style="background:#fff;border-top:1px solid var(--linia)"><div class="wrap">
+  <h2 class="tyt">Galeria</h2>
+  <p class="lead">Zdjęcia z osady - w wersji finalnej z pełnym zestawem i powiększaniem na telefonie.</p>
+  <div class="mozaika" style="grid-auto-rows:190px">
+    <a href="#" class="duzy"><img src="img/domki_noc.webp" alt="Osada nocą" loading="lazy"></a>
+    <a href="#"><img src="img/domek_zachod.webp" alt="Domek o zachodzie słońca" loading="lazy"></a>
+    <a href="#"><img src="img/zmierzch.webp" alt="Domki o zmierzchu" loading="lazy"></a>
+    <a href="#"><img src="img/taras.webp" alt="Taras z balią" loading="lazy"></a>
+    <a href="#"><img src="img/antresola.webp" alt="Antresola" loading="lazy"></a>
+    <a href="#"><img src="img/sauna.webp" alt="Sauna" loading="lazy"></a>
+    <a href="#"><img src="img/balia.webp" alt="Balia" loading="lazy"></a>
+    <a href="#"><img src="img/jadalnia.webp" alt="Jadalnia" loading="lazy"></a>
+    <a href="#"><img src="img/sniadanie.webp" alt="Śniadanie" loading="lazy"></a>
+    <a href="#"><img src="img/panorama.webp" alt="Okolica" loading="lazy"></a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="tyt">Co mówią goście</h2>
+  <p class="lead">W wersji finalnej w tym miejscu pojawiają się prawdziwe opinie z wizytówki Google, odświeżane automatycznie. Poniżej przykładowy układ.</p>
+  <div class="opinie">
+    <div class="opinia"><span class="przyklad">przykład</span><div class="gw">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Tu pojawi się opinia z Google wraz z imieniem autora i datą wystawienia.</p><div class="kto">Imię gościa &middot; opinia z Google</div></div>
+    <div class="opinia"><span class="przyklad">przykład</span><div class="gw">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Tu pojawi się opinia z Google wraz z imieniem autora i datą wystawienia.</p><div class="kto">Imię gościa &middot; opinia z Google</div></div>
+    <div class="opinia"><span class="przyklad">przykład</span><div class="gw">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Tu pojawi się opinia z Google wraz z imieniem autora i datą wystawienia.</p><div class="kto">Imię gościa &middot; opinia z Google</div></div>
+  </div>
+</div></section>
+
+<section id="rezerwacja" class="ciemna" style="padding:64px 0">
+  <div class="wrap" style="text-align:center">
+    <h2 class="tyt">Zarezerwuj pobyt</h2>
+    <p class="lead" style="margin:0 auto 26px">Rezerwacja online przez system dostępny na stronie albo telefonicznie w recepcji. W wersji finalnej przycisk prowadzi prosto do kalendarza dostępności.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href="#kontakt">Rezerwuj online</a>
+      <a class="btn ghost" style="color:#fff;border-color:#fff" href="tel:+48790656082">&#9742; 790 656 082</a>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt"><div class="wrap">
+  <div class="kontakt">
+    <div>
+      <h2 class="tyt">Kontakt</h2>
+      <h3>Adres osady</h3>
+      <div>Chycza 106<br>29-135 Radków<br>województwo świętokrzyskie</div>
+      <h3>Recepcja</h3>
+      <div><a href="tel:+48790656082">+48 790 656 082</a></div>
+      <div><a href="mailto:lesna.polana.gorajek@gmail.com">lesna.polana.gorajek@gmail.com</a></div>
+      <h3>Znajdź nas</h3>
+      <div><a href="https://www.facebook.com/lesna.polana.gorajek/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.instagram.com/lesna.polana.gorajek/" target="_blank" rel="noopener">Instagram</a></div>
+      <div style="margin-top:26px"><a class="btn" href="https://maps.google.com/?q=Chycza+106,+29-135+Radk%C3%B3w" target="_blank" rel="noopener">Nawiguj</a></div>
+    </div>
+    <div>
+      <iframe class="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Chycza%20106,%2029-135%20Radk%C3%B3w&output=embed" title="Mapa dojazdu"></iframe>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div>Leśna Polana Górajek &middot; Chycza 106, 29-135 Radków</div>
+  <div>Szkic strony przygotowany przez inż. Łukasza Stasiaka &middot; 888 316 564</div>
+</div></footer>
+
+<div class="mobbar"><a class="z" href="tel:+48790656082">&#9742; Zadzwoń</a><a class="r" href="#rezerwacja">Rezerwacja</a></div>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+</script>
+</body>
+</html>
